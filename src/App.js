@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Coins from './components/Coins';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      
+      {/* <div style={{ margin: "10vh 29vw" }}>
+        <div>
+          <textarea name="text" id="textarea" style={{ margin: "auto", padding: "1vh 0", height: "5vh", width: "40vw", textAlign: "center" }}>Hello
+          </textarea>
+        </div>
+        <button style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: "vw", overflow: "hidden" }}>Search</button>
+      </div> */}
+      <Coins/>
+    </>
   );
 }
 
